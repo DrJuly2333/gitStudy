@@ -315,6 +315,8 @@ abstract class AbstractStringBuilder implements Appendable, CharSequence {
 
 类型擦除，编译时候会去除泛型的参数
 
+**类型擦除的主要过程如下： 1.将所有的泛型参数用其最左边界（最顶级的父类型）类型替换。 2.移除所有的类型参数。**
+
 
 
 ### 反射
@@ -363,6 +365,12 @@ SPI 即 Service Provider Interface ，字面意思就是：“服务提供者的
 SPI 将服务接口和具体的服务实现分离开来，将服务调用方和服务实现者解耦，能够提升程序的扩展性、可维护性。修改或者替换服务实现并不需要修改调用方。
 
 很多框架都使用了 Java 的 SPI 机制，比如：Spring 框架、数据库加载驱动、日志接口、以及 Dubbo 的扩展实现等等
+
+```
+SLF4J （Simple Logging Facade for Java）是 Java 的一个日志门面（接口），其具体实现有几种，比如：Logback、Log4j、Log4j2 等等，而且还可以切换，在切换日志具体实现的时候我们是不需要更改项目代码的，只需要在 Maven 依赖里面修改一些 pom 依赖就好了。
+```
+
+
 
 #### SPI与API的区别
 
