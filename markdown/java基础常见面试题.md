@@ -14,7 +14,7 @@ JRE 是 Java 运行时环境。它是运行已编译 Java 程序所需的所有�
 
 在 Java 中，JVM 可以理解的代码就叫做字节码，它不面向任何特定的处理器，只面向虚拟机。Java 语言通过字节码的方式，在一定程度上解决了传统解释型语言执行效率低的问题，同时又保留了解释型语言可移植的特点，而且，由于字节码并不针对一种特定的机器，因此，Java 程序无须重新编译便可在多种不同操作系统的计算机上运行。
 
-![image](../../source/image/image-20230321143831050.png)
+![image](../source/image/image-20230321143831050.png)
 
 #### 为什么说java是编译与解释并存
 
@@ -158,7 +158,7 @@ static final int hash(Object key) {
 
 **引用拷贝**：引用拷贝就是两个不同的引用指向同一个对象
 
-![image-20230321165054205](../../source/image/image-20230321165054205.png)
+![image-20230321165054205](../source/image/image-20230321165054205.png)
 
 #### ==和equals()比较
 
@@ -400,7 +400,7 @@ SLF4J （Simple Logging Facade for Java）是 Java 的一个日志门面（接�
 
 TCP/IP 四层模型：1.应用层、2.传输层、3.网络层、4.网络接口层
 
-![image-20230322152034904](../../source/image/image-20230322152034904.png)
+![image-20230322152034904](../source/image/image-20230322152034904.png)
 
 #### **serialVersionUID 有什么作用？**
 
